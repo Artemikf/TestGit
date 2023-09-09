@@ -6,15 +6,21 @@ using System.Threading.Tasks;
 
 namespace TestGit
 {
+    
     internal class Program
     {
+        static int Func(int x)
+        {
+            x = (int)Math.Pow(x, 2);
+            return x;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("test github");
-            Console.ReadLine();
             int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"{a} + {a} = {a + a}");
+            Console.WriteLine($"{a} * {a} = {Func(a)}");
 
+            Console.ReadLine();
         }
     }
 }
