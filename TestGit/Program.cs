@@ -12,6 +12,8 @@ namespace TestGit
         {
             Console.WriteLine("test github");
             Console.ReadLine();
+            int a = 5;
+            Console.WriteLine($"{a} + {a} = {a + a}");
         }
     }
 }
