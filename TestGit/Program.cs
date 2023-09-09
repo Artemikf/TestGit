@@ -12,8 +12,9 @@ namespace TestGit
         {
             Console.WriteLine("test github");
             Console.ReadLine();
-            int a = 5;
+            int a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"{a} + {a} = {a + a}");
+
         }
     }
 }
